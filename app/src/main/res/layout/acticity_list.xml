@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.activity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="@android:color/holo_blue_light"
+            android:orientation="horizontal"
+            android:id="@+id/activity_app_liner">
+
+            <Button
+                android:id="@+id/back1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:background="@drawable/arrow_left" />
+
+            <TextView
+                android:id="@+id/TextView_activity_club_person_release"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="待审核的活动"
+                android:layout_marginLeft="80px"
+                android:layout_marginTop="15px"
+                android:textSize="30sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rela_app_award"
+            android:layout_below="@+id/activity_app_liner">
+            <ImageView
+                android:layout_marginTop="10px"
+                android:layout_marginRight="10px"
+                android:layout_width="75px"
+                android:layout_height="75px"
+                android:id="@+id/button_app_select"
+                android:background="@drawable/search"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:id="@+id/activity_app_select"
+                android:layout_toRightOf="@+id/button_app_select"
+                android:hint="搜索审核活动"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:background="@drawable/underline"
+                />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/act_recyclerview"
+            android:layout_below="@+id/rela_app_award"/>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

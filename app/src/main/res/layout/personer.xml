@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:exported="true"
+    tools:context=".announce.announce">
+
+
+
+    <ImageView
+        android:id="@+id/info_h_back"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:alpha="0.5"
+        android:background="@drawable/bkbk"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/info_h_head"
+        android:layout_width="118dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/club1"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/info_h_back"
+        app:layout_constraintStart_toStartOf="@+id/info_h_back"
+        app:layout_constraintTop_toTopOf="@+id/info_h_back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="502490923"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="@+id/info_h_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info_h_head"></TextView>
+
+    <Button
+        android:id="@+id/per_btn1"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/background_light"
+        android:stateListAnimator="@null"
+        android:text="发布校园公告"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info_h_back" />
+
+    <Button
+        android:id="@+id/per_btn2"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/background_light"
+        android:stateListAnimator="@null"
+        android:text="待审核的活动"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/per_btn1" />
+
+    <Button
+        android:id="@+id/per_btn3"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/background_light"
+        android:stateListAnimator="@null"
+        android:text="待审核的奖项"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/per_btn2" />
+
+    <Button
+        android:id="@+id/per_btn4"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/background_light"
+        android:stateListAnimator="@null"
+        android:text="校园公告"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/per_btn3" />
+
+    <Button
+        android:id="@+id/per_btn5"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/background_light"
+        android:stateListAnimator="@null"
+        android:text="社团审核"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/per_btn4" />
+
+
+
+
+
+    <Button
+        android:id="@+id/per_btn7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/right_per"
+        app:layout_constraintEnd_toEndOf="@+id/per_btn1"
+        app:layout_constraintTop_toTopOf="@+id/per_btn1"
+        android:layout_marginRight="8dp" />
+
+    <Button
+        android:id="@+id/per_btn8"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/right_per"
+        app:layout_constraintEnd_toEndOf="@+id/per_btn2"
+        app:layout_constraintTop_toTopOf="@+id/per_btn2"
+        android:layout_marginRight="8dp" />
+
+    <Button
+        android:id="@+id/per_btn9"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/right_per"
+        app:layout_constraintEnd_toEndOf="@+id/per_btn3"
+        app:layout_constraintTop_toTopOf="@+id/per_btn3"
+        android:layout_marginRight="8dp" />
+
+    <Button
+        android:id="@+id/per_btn10"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/right_per"
+        app:layout_constraintEnd_toEndOf="@+id/per_btn4"
+        app:layout_constraintTop_toTopOf="@+id/per_btn4"
+        android:layout_marginRight="8dp" />
+
+    <Button
+        android:id="@+id/per_btn11"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/right_per"
+        app:layout_constraintEnd_toEndOf="@+id/per_btn5"
+        app:layout_constraintTop_toTopOf="@+id/per_btn5"
+        android:layout_marginRight="8dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/activity_app_liner"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@android:color/holo_blue_light"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/club_digital_back"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:background="@drawable/arrow_left" />
+
+        <TextView
+            android:id="@+id/club_digital_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="15px"
+            android:text="社团简介"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/club_digital_picture"
+        android:layout_width="164dp"
+        android:layout_height="168dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="120dp"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_app_liner"
+         />
+
+    <TextView
+        android:id="@+id/textview_club_digital_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="社团名称"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_club_digital_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="社团简介"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_club_digital_time" />
+
+    <TextView
+        android:id="@+id/textview_club_digital_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="社团申请时间"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_club_digital_name" />
+
+    <Button
+        android:id="@+id/club_agree"
+        android:layout_width="146dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal"
+        android:text="@string/agree"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/club_disagree"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/club_disagree"
+        android:layout_width="146dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal"
+        android:text="@string/disagree"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/club_digital_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginBottom="8dp"
+        android:text=""
+        android:textSize="20sp"
+        android:gravity="left"
+        app:layout_constraintBottom_toBottomOf="@+id/textview_club_digital_name"
+        app:layout_constraintStart_toEndOf="@+id/textview_club_digital_name" />
+
+    <TextView
+        android:id="@+id/club_digital_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="4dp"
+        android:text=""
+        android:textSize="20sp"
+        android:gravity="left"
+        app:layout_constraintBottom_toBottomOf="@+id/textview_club_digital_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/awards_time" />
+
+    <TextView
+        android:id="@+id/club_digital_content"
+        android:layout_width="210dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:gravity="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/awards_grade"
+        app:layout_constraintTop_toTopOf="@+id/textview_club_digital_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+<resources>
+
+    <string name="app_name">Admin</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">管理员</string>
+    <string name="nav_header_subtitle">管理员甲</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="menu_activity">活动审核</string>
+    <string name="menu_club">社团审核</string>
+    <string name="menu_glory">社团奖项审核</string>
+
+    <string name="announce">校园公告</string>
+    <string name="delete_club">社团删除</string>
+
+    <string name="activity_id">活动编号</string>
+    <string name="activity_name">活动名称</string>
+    <string name="club_id">社团编号</string>
+    <string name="place_id">场地编号</string>
+    <string name="activity_start_time">活动开始时间</string>
+    <string name="activity_finish_time">活动结束时间</string>
+    <string name="activity_grade">活动分数</string>
+    <string name="activity_status">活动状态</string>
+    <string name="activity_describe">活动描述</string>
+
+    <string name="club_name">社团名称</string>
+    <string name="club_amount">社团人数</string>
+    <string name="club_remark">社团分数</string>
+    <string name="club_proID">社长名称</string>
+    <string name="club_grade">社团等级</string>
+    <string name="club_createtime">社团创建时间</string>
+    <string name="club_deletetime">社团解散时间</string>
+    <string name="club_status">社团创建审核状态</string>
+
+
+    <string name="awards_id">奖项编号</string>
+    <string name="awards_name">奖项名称</string>
+    <string name="awards_grade">奖项分数</string>
+    <string name="awards_status">奖项审核状态</string>
+    <string name="awards_time">奖项申请时间</string>
+
+    <string name="agree">通过</string>
+    <string name="disagree">不通过</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/underline"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/act_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        tools:src="@tools:sample/avatars" />
+<!--        app:srcCompat="@drawable/head" />-->
+    <TextView
+        android:id="@+id/act_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/act_image"
+        android:textSize="18sp"
+        tools:text="校园足球赛" />
+
+    <TextView
+        android:id="@+id/act_club"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/act_image"
+        android:layout_below="@+id/act_name"
+        tools:text="足球社"/>
+</RelativeLayout>
